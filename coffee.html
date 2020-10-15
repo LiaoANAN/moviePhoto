@@ -14,12 +14,12 @@
 
         <div data-role="header" data-position="fixed" data-theme="b">
             <h1>Coffee</h1>
-            <a href="#menu" class="ui-btn ui-corner-all ui-btn-inline ui-mini footer-button-left ui-btn-icon-left ui-icon-power">Back</a>
+            <a href="index.html" rel="external" class="ui-btn ui-corner-all ui-btn-inline ui-mini footer-button-left ui-btn-icon-left ui-icon-power">Back</a>
         </div><!-- /header -->
     
         <div role="main" class="ui-content">
             <ul data-role="listview" data-autodividers="true" data-filter="true" data-inset="true">
-                        <li><a href="#">
+                        <li><a href="#coffee">
                             <img src="images/cake.jpg">
                         <h2>Cake</h2>
                         <span class="ui-li-count" style="color: red;font-size: 20px">$120</span>
@@ -38,13 +38,34 @@
                         <p>Phoenix</p></a>
                         </li>
             </ul>
-            <p><a href="#menu">Back to Menu</a></p>
+            <p><a href="index.html">Back to Menu</a></p>
         </div><!-- /content -->
     
         <div data-role="footer" data-position="fixed">
             <h4>Page Footer</h4>
         </div><!-- /footer -->
 
+    </div><!-- /page -->
+
+    <div data-role="page" id="coffee">
+
+            <div data-role="header" data-position="fixed" data-theme="b">
+                <h1>Cake Detail</h1>
+                <a href="#hamb" class="ui-btn ui-corner-all ui-btn-inline ui-mini footer-button-left ui-btn-icon-left ui-icon-power">Back</a>
+            </div><!-- /header -->
+        
+            <div role="main" class="ui-content" data-position="fixed">
+                <p>I'm the second in the source order so I'm hidden when the page loads. I'm just shown if a link that references my id is beeing clicked.</p>
+                <img src="images/cake.jpg" width=100%>
+
+                <p><a href="#menu">Back to Menu</a></p>
+            </div><!-- /content -->
+        
+            <div data-role="footer" data-position="fixed">
+                <h4>Page Footer</h4>
+            </div><!-- /footer -->
+    
+        
     </div><!-- /page -->
 
 </body>
